@@ -1,0 +1,9 @@
+# Export all names
+exportPattern("*.*")
+
+useDynLib(CorKohonen)
+
+# Import all packages listed as Imports or Depends
+import(class)
+import(MASS)
+

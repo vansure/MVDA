@@ -1,0 +1,10 @@
+Package: CorKohonen
+Version: 1.0
+Title: SOM with correlation
+Author: Angela Serra
+Maintainer: Angela Serra <aserra@unisa.it>
+Description: Supervised and unsupervised self-organising maps
+Depends: R (>= 2.6.0), class, MASS
+NeedsCompilation: yes
+License: GPL (>= 2)
+Packaged: 2014-12-17 18:34:48 UTC; angela
