@@ -27,9 +27,9 @@ clustering_summary <- function(DB, cluster){
     clust_eval$intracls.average -> intra.avg
     clust_eval$intercls.complete -> inter.c
 
-    toPrint[j,3] = round(1-mean(intra.avg),digits = 2)
-    toPrint[j,4] = round(1-mean(inter.c),digits = 2)
-    toPrint[j,5] = round(1 - (length(table(cluster))/NOBJS),2)
+    toPrint[j,3] = round(1-mean(intra.avg),digits = 4)
+    toPrint[j,4] = round(1-mean(inter.c),digits = 4)
+    toPrint[j,5] = round(1 - (length(table(cluster))/NOBJS),4)
 
     toPrint[j,6] =(1/4) * ( ((toPrint[j,3]+1)/2) + (1-(toPrint[j,4]+1)/2) +
                               (1-(toPrint[j,2]/length(table(cluster)))) + toPrint[j,5])
